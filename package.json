@@ -1,0 +1,31 @@
+{
+  "name": "amazon-partner-api-server",
+  "version": "0.0.1",
+  "description": "Just a way to have some amazon partner api easier usable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp conf.js.dist conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpenverne/amazon-partner-api-server.git"
+  },
+  "keywords": [
+    "amazon",
+    "api",
+    "partner",
+    "nodejs",
+    "server"
+  ],
+  "author": "gpenverne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpenverne/amazon-partner-api-server/issues"
+  },
+  "homepage": "https://github.com/gpenverne/amazon-partner-api-server#readme",
+  "dependencies": {
+    "amazon-product-api": "^0.4.4",
+    "shuffle-array": "^1.0.1"
+  }
+}
