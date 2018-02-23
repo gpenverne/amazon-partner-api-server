@@ -17,22 +17,22 @@ var server = http.createServer(function(req, res) {
         res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
         const product = results[0];
         const friendlyProduct = {
-          asin: product.ASIN,
-          title: product.ItemAttributes[0].Title,
-          url: product.DetailPageURL,
+          asin: product.ASIN[0],
+          title: product.ItemAttributes[0].Title[0],
+          url: product.DetailPageURL[0],
           pictures: {
               small: {
-                  url: product.SmallImage[0].URL,
+                  url: product.SmallImage[0].URL[0],
                   height: parseInt(product.SmallImage[0].Height[0]['_']),
                   width: parseInt(product.SmallImage[0].Width[0]['_'])
               },
               medium: {
-                  url: product.MediumImage[0].URL,
+                  url: product.MediumImage[0].URL[0],
                   height: parseInt(product.MediumImage[0].Height[0]['_']),
                   width: parseInt(product.MediumImage[0].Width[0]['_'])
               },
               large: {
-                  url: product.LargeImage[0].URL,
+                  url: product.LargeImage[0].URL[0],
                   height: parseInt(product.LargeImage[0].Height[0]['_']),
                   width: parseInt(product.LargeImage[0].Width[0]['_'])
               }
