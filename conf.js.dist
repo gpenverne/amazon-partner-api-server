@@ -1,0 +1,9 @@
+module.exports = {
+    port: 1337,
+    aws: {
+        awsId: "your-id",
+        awsSecret: "your-secret",
+        awsTag: "gkdv-21",
+        domain: 'webservices.amazon.fr' // please refer to https://docs.aws.amazon.com/AWSECommerceService/latest/DG/AnatomyOfaRESTRequest.html#EndpointsandWebServices
+    }
+};
