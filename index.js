@@ -40,7 +40,7 @@ var server = http.createServer(function(req, res) {
           features: product.ItemAttributes.Feature,
           binding: product.ItemAttributes.Binding,
           price: {
-              currency: product.ItemAttributes[0].ListPrice[0].CurrencyCode,
+              currency: product.ItemAttributes[0].ListPrice[0].CurrencyCode[0],
               amountInCents:  parseInt(product.ItemAttributes[0].ListPrice[0].Amount),
               amount:  parseInt(product.ItemAttributes[0].ListPrice[0].Amount) / 100
           }
