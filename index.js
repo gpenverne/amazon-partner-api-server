@@ -8,15 +8,15 @@ var client = amazon.createClient(conf.aws);
 
 var server = http.createServer(function(req, res) {
   const searchTerms = decodeURI(req.url).replace('/', '');
-  client.itemSearch({
+  return client.itemSearch({
        keywords: searchTerms,
        responseGroup: 'ItemAttributes,Offers,Images',
        domain: conf.aws.domain
     }).then(function(results){
-      shuffle(results);
-      res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
-      const product = results[0];
-      const friendlyProduct = {
+        shuffle(results);
+        res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+        const product = results[0];
+        const friendlyProduct = {
           asin: product.ASIN,
           title: product.ItemAttributes[0].Title,
           url: product.DetailPageURL,
@@ -44,9 +44,9 @@ var server = http.createServer(function(req, res) {
               amountInCents:  parseInt(product.ItemAttributes[0].ListPrice[0].Amount),
               amount:  parseInt(product.ItemAttributes[0].ListPrice[0].Amount) / 100
           }
-      };
-      res.end(JSON.stringify(friendlyProduct))
-  });
+        };
+        res.end(JSON.stringify(friendlyProduct));
+    });
 });
 
 server.listen(conf.port);
