@@ -12,7 +12,7 @@ Of course ...
 
 ``
 npm install
-` `
+``
 
 Edit the generated conf.js file, to put your amazaon partner credentials
 
@@ -23,7 +23,7 @@ http://localhost:1337/anything you want
 ``
 
 And you will obtain a json like:
-``
+```json
 {
     "asin":[
         "B00TR8ZM86"
@@ -63,4 +63,4 @@ And you will obtain a json like:
         "amount":13.57
     }
 }
-``
+```
