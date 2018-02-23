@@ -24,43 +24,5 @@ http://localhost:1337/anything you want
 
 And you will obtain a json like:
 ```json
-{
-    "asin":[
-        "B00TR8ZM86"
-    ],
-    "title":[
-        "Funko - POP TV - Doctor Who - 6" TARDIS"
-    ],
-    "url":[
-        "https://www.amazon.fr/Funko-POP-Doctor-Who-TARDIS/dp/B00TR8ZM86?psc=1&SubscriptionId=AKIAILCDWDHURXF775TQ&tag=gkdv-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00TR8ZM86"
-    ],
-    "pictures":{
-        "small":{
-            "url":[
-                "https://images-eu.ssl-images-amazon.com/images/I/419IQeztj4L._SL75_.jpg"
-            ],
-            "height":75,
-            "width":52
-        },
-        "medium":{
-            "url":[
-                "https://images-eu.ssl-images-amazon.com/images/I/419IQeztj4L._SL160_.jpg"
-            ],
-            "height":160,
-            "width":110
-        },
-        "large":{
-            "url":[
-                "https://images-eu.ssl-images-amazon.com/images/I/419IQeztj4L.jpg"
-            ],
-            "height":500,
-            "width":345
-        }
-    },
-    "price":{
-        "currency":"EUR",
-        "amountInCents":1357,
-        "amount":13.57
-    }
-}
+{"asin":"B073LGMWG9","title":"COFFRET 2017 l'intégrale DOCTEUR WHO SAISONS 1 à 9 + 2 épisodes spéciaux + en bonus : les secrets du docteur enfin révélés !","url":"https://www.amazon.fr/COFFRET-lint%C3%A9grale-DOCTEUR-%C3%A9pisodes-sp%C3%A9ciaux/dp/B073LGMWG9?SubscriptionId=AKIAILCDWDHURXF775TQ&tag=gkdv-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073LGMWG9","pictures":{"small":{"url":"https://images-eu.ssl-images-amazon.com/images/I/41VXOtL5lJL._SL75_.jpg","height":54,"width":75},"medium":{"url":"https://images-eu.ssl-images-amazon.com/images/I/41VXOtL5lJL._SL160_.jpg","height":115,"width":160},"large":{"url":"https://images-eu.ssl-images-amazon.com/images/I/41VXOtL5lJL.jpg","height":359,"width":500}},"price":{"currency":"EUR","amountInCents":7107,"amount":71.07}}
 ```
