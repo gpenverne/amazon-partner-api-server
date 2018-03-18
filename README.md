@@ -16,7 +16,7 @@ npm install
 
 Edit the generated conf.js file, to put your amazaon partner credentials
 
-## Use it
+## Use it
 
 Go to
 ``
