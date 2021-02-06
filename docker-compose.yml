@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    server-node:
+        build:
+            context: ./project/nodejs
+            dockerfile: Dockerfile
+        ports:
+            - 1337:1337
